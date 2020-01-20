@@ -1,4 +1,4 @@
-npm init
+npm install
 npm start
 
 curl http://localhost:8080/api/list/
