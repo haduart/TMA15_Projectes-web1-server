@@ -1,0 +1,9 @@
+npm init
+npm start
+
+curl http://localhost:8080/api/list/
+curl http://localhost:8080/api/list/c3dabe2d-ceff-496d-930e-eccdb19ef5ec
+curl -d '{"id":"3"}' -H "Content-Type: application/json" http://localhost:8080/api/add/c3dabe2d-ceff-496d-930e-eccdb19ef5ec
+curl -d '{"id":"2"}' -H "Content-Type: application/json" http://localhost:8080/api/add/c3dabe2d-ceff-496d-930e-eccdb19ef5ec
+
+curl -d '{"id":"1"}' -H "Content-Type: application/json" http://localhost:8080/api/remove/c3dabe2d-ceff-496d-930e-eccdb19ef5ec

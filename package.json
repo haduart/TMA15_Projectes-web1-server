@@ -1,0 +1,21 @@
+{
+  "name": "edu.url.salle",
+  "version": "1.0.0",
+  "description": "Server side for the final project in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -q index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressjs",
+    "javascript"
+  ],
+  "author": "Eduard Cespedes Borras <eduard@orkei.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4",
+    "uuidv4": "^6.0.0"
+  }
+}
