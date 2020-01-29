@@ -1,6 +1,7 @@
 const express = require('express');
 const {uuid} = require('uuidv4');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
@@ -52,6 +53,14 @@ glassesDB["3"] = {
     "colors": ["#e0e0d1", "#999966"],
     "bgColor": '#f5f5f0',
 };
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+app.use('/public', express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => res.send('Hello World!'));
 

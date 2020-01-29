@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Break</title>
+    <link rel="stylesheet" href="./style.css"/>
+
+    <script>
+        var isPlaying = false;
+        var y;
+
+        y++;
+        console.log("This is y: " + y);
+        y = 11;
+        console.log("This is y again: " + y);
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+
+        function submintAction() {
+            var user = document.getElementById("username").valueOf();
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<article>
+    <h1 class="H11" id="idH1"> this is for playing
+
+        <h2> kkkkk</h2>
+    </h1>
+
+    <h1> this is another H1</h1>
+
+    <hr/>
+
+    <div class="test-div">
+        <p class="this">
+        <div class="that">This is:
+        </div>
+
+        </p>
+        <div class="awesome">awesome</div>
+    </div>
+    <div class="this" id="this1">
+        hey there
+    </div>
+
+    <section>
+        <h2> Testimonials</h2>
+        <hr/>
+
+        <input id="usename" type="text" name="username" value="sidthesloth"/>
+        <input id="pass" type="text" name="password" value="slothsecret"/>
+        <input type="hidden" name="hiddenValue" value="defaultValue"/>
+        <input type="checkbox" name="checkBox" value="defaultCheck"/>
+
+        <button onclick="submintAction()"> button</button>
+
+
+        <input type="text">
+        <p onclick="myFunction()">hi there</p>
+
+        <p class="pClass" onclick="myFunction()">hoy</p>
+        <p onclick="myFunction()">aloha</p>
+
+        <p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html" title="WWF">
+            For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization,
+            WWF
+            works in 100 countries and is supported by <span>1.2 million members in the United States</span> and close
+            to 5 million
+            globally.
+        </blockquote>
+        </p>
+        <p>
+            <q style="display: block; border-color: red; border-bottom-width: thick"> I'm a production when I drink
+                coffee</q>
+            <cite> <abbr title="Professor">Pr</abbr> Eduard Céspedes &lt; Barcelona, Spain &gt; <sup>*1</sup></cite>
+        </p>
+    </section>
+</article>
+
+<footer>
+    <div id="footer"
+         style="border-color: red; border-width: 5px; border-style: solid; border-radius: 25px; display: inline-block">
+        &copy; Eduard Cespedes 2019
+    </div>
+</footer>
+
+</body>
+</html>

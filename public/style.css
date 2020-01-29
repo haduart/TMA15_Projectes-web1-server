@@ -1,0 +1,31 @@
+h1 {
+    color: white;
+    text-align: center;
+    border-width: 5px;
+    background-color: green;
+    border-style: solid;
+}
+
+
+.test-div .this > .that {
+    border-style: solid;
+}
+
+#this1 {
+    border-style: dashed;
+    border-color: red;
+}
+
+#this1:hover {
+    border-style: solid;
+    border-color: blue;
+}
+
+p.pClass {
+    background-color: red;
+}
+
+p.pClass:hover {
+    background-color: blue;
+}
+
